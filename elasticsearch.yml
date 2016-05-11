@@ -1,2 +1,4 @@
-discovery.type: ec2
-network.publish_host: _ec2:privateIp_
+discovery:
+  type: ec2
+network:
+  publish_host: _ec2:privateIp_
