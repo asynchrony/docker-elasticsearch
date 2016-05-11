@@ -1,4 +1,5 @@
 discovery:
   type: ec2
 network:
+  host: 0.0.0.0
   publish_host: _ec2:privateIp_
