@@ -1,5 +1,10 @@
 discovery:
   type: ec2
+  groups: ${SECURITY_GROUPS}
 network:
   host: 0.0.0.0
   publish_host: _ec2:privateIp_
+cluster:
+  name: ${CLUSTER_NAME}
+node:
+  name: ${HOSTNAME}
