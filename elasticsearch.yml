@@ -7,4 +7,4 @@ network:
 cluster:
   name: ${CLUSTER_NAME}
 node:
-  name: ${HOSTNAME}
+  name: ${EC2_INSTANCE_ID}
