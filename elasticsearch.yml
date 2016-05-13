@@ -5,6 +5,13 @@ network:
   host: 0.0.0.0
   publish_host: _ec2:privateIp_
 cluster:
+  routing:
+    allocation: 
+      enable: all
+      allow_rebalance: indices_all_active
+      disable_allocation: false
+  rebalance:
+    enable: all
   name: ${CLUSTER_NAME}
 node:
   name: ${EC2_INSTANCE_ID}
