@@ -15,6 +15,3 @@ cluster:
   name: ${CLUSTER_NAME}
 node:
   name: ${EC2_INSTANCE_ID}
-path:
-  logs: /data/log
-  data: /data/data
