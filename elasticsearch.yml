@@ -10,6 +10,8 @@ cluster:
       enable: all
       allow_rebalance: indices_all_active
       disable_allocation: false
+      cluster_concurrent_rebalance: 8
+      node_concurrent_recoveries: 8
   rebalance:
     enable: all
   name: ${CLUSTER_NAME}
