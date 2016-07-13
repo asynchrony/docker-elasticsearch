@@ -8,17 +8,17 @@
 actions:
   1:
     action: close
-    description: "Close selected indices"
+    description: "Close all indices equal or older than 2 days"
     options:
       delete_aliases: False
       timeout_override:
       continue_if_exception: False
       disable_action: False
     filters:
-        - filtertype: age
-          source: name
-          direction: older
-          timestring: '%Y.%m.%d'
-          unit: days
-          unit_count: 2
-          exclude:
+    - filtertype: age
+      source: name
+      direction: older
+      timestring: '%Y.%m.%d'
+      unit: days
+      unit_count: 2
+      exclude:
