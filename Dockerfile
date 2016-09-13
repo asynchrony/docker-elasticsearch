@@ -1,4 +1,4 @@
-FROM elasticsearch:2
+FROM elasticsearch:2.4
 
 RUN bin/plugin install cloud-aws -b \
  && bin/plugin install lmenezes/elasticsearch-kopf
